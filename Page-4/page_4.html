@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page 4</title>
+
+    <script src="https://kit.fontawesome.com/ad9fa19830.js" crossorigin="anonymous"></script>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Header and Image */
+        header {
+            background-color: #924990;
+            width: 100%;
+            height: 200px;
+            background: linear-gradient(to bottom,
+                    #8A4187,
+                    #964E97 50%,
+                    #A158A1 50%,
+                    #A35AA3);
+            background-size: 100% 10px;
+            display: flex;
+        }
+
+        header img {
+            width: 180px;
+            height: auto;
+            margin: 2.7em 2.7em 1.8em 2.7em;
+            box-shadow: -10px -10px 0px 1px #A1639A, -20px -20px 0px 1px #CC95CC;
+            border-radius: 14px;
+            border: 2px solid white;
+        }
+
+        header div {
+            padding: 2em;
+            letter-spacing: 2.7px;
+        }
+
+        header h1 {
+            color: white;
+            font-size: 30pt;
+        }
+
+        header h3 {
+            color: #d49dd4;
+            margin-left: 10em;
+        }
+
+        header img:nth-child(3) {
+            width: 210px;
+            position: absolute;
+            margin: 0;
+            right: 1.5em;
+            top: 5.5em;
+        }
+
+        /* x - Header and Image - x */
+
+        /* Navigation Bar */
+
+        .nav {
+            width: 100%;
+            height: 2.4em;
+            border: 1px solid black;
+            background-color: #CC99CC;
+            margin-top: 5px;
+        }
+
+        .nav ul {
+            list-style: none;
+            padding: 9px;
+            display: flex;
+            justify-content: space-evenly;
+            width: 70%;
+            float: left;
+        }
+
+        .nav ul li {
+            position: relative;
+            display: inline-block;
+            z-index: 2;
+        }
+
+        .nav ul li a {
+            display: block;
+            text-decoration: none;
+            color: white;
+            font-weight: 600;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        .nav ul li a:hover,
+        .nav ul li.selected a {
+            color: #66335f;
+            transition: 200ms;
+            cursor: pointer;
+        }
+
+        /* Navigation Dropdown Menu Bar */
+
+        .nav ul ul {
+            position: absolute;
+            top: 18px;
+            display: none;
+            left: -11px;
+        }
+
+        .nav ul li:hover>ul {
+            display: block;
+        }
+
+        .nav ul ul li {
+            line-height: 1.8;
+            width: 100px;
+            float: none;
+            display: list-item;
+            position: relative;
+            background-color: #CC99CC;
+            border-bottom: 1px dotted black;
+            padding: 5px;
+        }
+
+        .nav ul ul ul li {
+            position: relative;
+            top: -27px;
+            left: 112px;
+        }
+
+        .nav ul ul li:hover,
+        .nav ul ul ul li:hover {
+            background-color: #b981b9;
+            transition: 150ms;
+        }
+
+
+        .nav ul li.active a{
+            border: 1px solid white;
+            padding: .3em .5em;
+            margin-top: -5px;
+            box-shadow: 0px 10px 13px -7px #00000051, 5px 5px 15px 5px rgba(0,0,0,0);
+        }
+        
+        .nav ul li.active a:hover{
+            color: #66335f;
+            transition: 200ms;
+        }
+        /* x - Navigation Dropdown Menu Bar - x */
+        /* x - Navigation Bar - x */
+
+        /* Body Contents */
+
+        .content p:first-child {
+            color: #BB76B7;
+            float: right;
+            margin: 1em 4em;
+            font-size: 11pt;
+            font-weight: 550;
+        }
+
+        .main-content {
+            display: flex;
+            padding: 1em;
+            padding-left: 0;
+            padding-right: 0;
+            justify-content: space-between;
+            width: 100%;
+        }
+
+        .main-content .outside {
+            position: relative;
+            width: 250px;
+            height: 350px;
+            padding: 1.5em;
+            background: black;
+            clip-path: polygon(30% 0%, 70% 0%, 100% 0, 100% 100%, 70% 100%, 9% 100%, 0 91%, 0 0);
+        }
+
+        .main-content .inside {
+            position: absolute;
+            top: 2px;
+            left: 2px;
+            right: 2px;
+            bottom: 2px;
+            background: #EFEFEF;
+            clip-path: polygon(30% 0%, 70% 0%, 100% 0, 100% 100%, 70% 100%, 9% 100%, 0 91%, 0 0);
+            padding: 1.5em;
+        }
+
+        .inside h3,
+        .main-text h2 {
+            color: #9D3DA4;
+            font-weight: 600;
+            margin-top: 2.1em;
+            font-size: 12pt;
+            letter-spacing: 1px;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        .inside p {
+            margin-top: 1.5em;
+            line-height: 1.5;
+            color: rgb(41, 40, 40);
+        }
+
+        .inside ul,
+        .main-text ul {
+            padding: 1.5em;
+            line-height: 1.2;
+            color: rgb(41, 40, 40);
+        }
+
+        .inside ul li,
+        .main-text ul li {
+            list-style-image: url(images/caret-right-solid.svg);
+        }
+
+        .inside ul li::marker,
+        .main-text ul li::marker {
+            color: #924990;
+            font-size: 25px;
+        }
+
+        .main-text {
+            width: 680px;
+            font-family: 'Poppins', sans-serif;
+            font-size: 11pt;
+            color: rgb(41, 40, 40);
+        }
+
+        .main-text h2 {
+            padding: 1.2em 1em .5em;
+            margin: 0;
+            font-size: 15pt;
+        }
+
+        .main-text p span {
+            color: #9D3DA4;
+            font-weight: 800;
+        }
+
+        .main-text a {
+            color: #9D3DA4;
+            text-decoration: underline;
+        }
+
+        .left-deco {
+            width: 30px;
+            background-color: #CC99CC;
+            height: 469px;
+            float: left;
+            -webkit-box-shadow: 11px 6px 0px 1px #A1639A; 
+            box-shadow: 11px 6px 0px 1px #A1639A, -9px -8px 0px 1px #A1639A;
+            border-radius: 5px;
+            border: 2px solid black;
+            border-left: none;
+        }
+
+        .right-deco {
+            width: 30px;
+            background-color: #CC99CC;
+            height: 469px;
+            float: right;
+            -webkit-box-shadow: 6px 11px 0px 1px #A1639A; 
+            box-shadow: -11px 6px 0px 1px #A1639A, 8px -9px 0px 1px #A1639A;
+            border-radius: 5px;
+            border: 2px solid black;
+            border-right: none;
+        }
+        /* x - Body Contents - x */
+
+        /* Footer */
+
+        footer{
+            width: 100%;
+            height: 60px;
+            background: linear-gradient(to bottom,
+                    #8A4187,
+                    #964E97 50%,
+                    #A158A1 50%,
+                    #A35AA3);
+            background-size: 100% 10px;
+            display: flex;
+            position: absolute;
+            bottom: 0;
+            justify-content: center;
+            align-items: center;
+        }
+
+        footer p{
+            color: white;
+            font-family: 'Open-sans', sans-serif;
+            font-size: 10pt;
+            letter-spacing: 1px;
+            word-spacing: 2px;
+        }
+
+        /* x - Footer x - */
+
+    </style>
+
+</head>
+
+<body>
+    <header>
+        <img src="https://images.ctfassets.net/hrltx12pl8hq/a2hkMAaruSQ8haQZ4rBL9/8ff4a6f289b9ca3f4e6474f29793a74a/nature-image-for-website.jpg?fit=fill&w=480&h=320"
+            alt="First Image">
+        <div>
+            <h1>Your Site Name</h1>
+            <h3>your slogan comes here</h3>
+        </div>
+        <img src="https://cdn.stocksnap.io/img-thumbs/280h/green-trees_HAOETHJSSF.jpg" alt="Second Image">
+    </header>
+    <div class="nav">
+        <ul>
+
+            <li>
+                <a href="/index.html">Home <i class="fa fa-caret-down"></i></a>
+
+                <ul>
+                    <li>
+                        <a href="/Page-1/page_1.html">New Page</a>
+                    </li>
+                    <li>
+                        <a href="/Page-2/page_2.html">New Page 2</a>
+                    </li>
+                    <li>
+                        <a href="/Page-3/page_3.html">New Page 3</a>
+                    </li>
+                    <li class="selected">
+                        <a href="/Page-4/page_4.html">New Page 4 <i class="fa fa-caret-right"></i></a>
+        
+                        <ul>
+                            <li><a href="/Page-4/page_4.html">Home</a></li>
+                            <li><a href="about_us.html">About Us</a></li>
+                            <li><a href="courses.html">Courses</a></li>
+                            <li><a href="resources.html">Resources</a></li>
+                            <li><a href="Contact_us.html">Contact Us</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="/Page-5/page_5.html">New Page 5</a>
+                    </li>
+                </ul>
+            </li>
+
+            <li><a href="features.html">Features</a></li>
+            <li><a href="reviews.html">Reviews</a></li>
+            <li><a href="pricing.html">Pricing</a></li>
+            <li><a href="faq.html">FAQ</a></li>
+            <li class="active"><a href="register.html">Get Started</a></li>
+        </ul>
+    </div>
+    <div class="content" style="z-index: 1;">
+        <p>November 2, 2007 (Fri)</p>
+        <div class="main-content">
+
+            <div class="left-deco">
+
+            </div>
+            <div class="outside">
+                <div class="inside">
+                    <h3>Website Add-Ons</h3>
+                    <p>Check out our easy to integrate website add-ons</p>
+                    <ul>
+                        <li>Smart Survey</li>
+                        <li>Smart Multi Poll</li>
+                        <li>Smart Poll</li>
+                        <li>Smart Guest Book</li>
+                        <li>Smart Quote</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="main-text">
+                <h2>Features of this Education Template</h2>
+                <ul>
+                    <li>Unique, attractive kids web site template design with cool colors</li>
+                    <li>Easy-to-use Drop-down Menus</li>
+                    <li>JavaScript Data Display</li>
+                    <li>Easy-to-edit Text Links</li>
+                    <li>All <b>11</b> linked HTML pages included</li>
+                    <li>Cross Browser Compatible - <span>Tested for IE 5+, Netscape 6+, Opera 7+, Firefox 1.0+</span>
+                    </li>
+                    <li>Designed to stretch and fit all resolutions (800 x 600 and higher)</li>
+                </ul>
+                <p><span class="buy">Buy Now</span> for only <b>$39.95</b>! <a href="#">Add to cart</a><i
+                        class="fa fa-cart-shopping"></i></p>
+                <br> <br>
+                <a href="#">More Templates from SmartWebby.com</a>
+            </div>
+
+            <div class="right-deco">
+
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>Copyright ©</p> &nbsp; &nbsp;
+        <p>www.yoursitename.com - All Rights Reserved. Designed by SmartWebby.com</p>
+    </footer>
+</body>
+
+</html>

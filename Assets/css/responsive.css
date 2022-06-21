@@ -1,0 +1,169 @@
+/*This Media Query is for index.html*/
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width:600px){
+    .content {
+        width: 38em;
+    }
+
+    #arrow-change,
+    #change-arrow,
+    .right-content h2{
+        font-size: 75%;
+    }
+
+    .right-content h5,
+    #main-block-container h5{
+        font-size: 32%;
+    }
+
+    .right-content {
+        width: 350px;
+    }
+
+    .right-content .gallery .img{
+        width: 3.2em;
+        height: 3.2em;
+    }
+
+    #main-item-container li{
+        font-size: 50%;
+    }
+
+    .header{
+        height: 100px;
+    }
+
+    .header img {
+        height: 6em;
+        width: auto;
+    }
+
+    .header div h1 {
+        font-size: 130%;
+    }
+    
+    .header div p {
+        font-size: 10pt;
+    }
+
+    .right-content-1 button{
+        font-size: 7pt;
+    }
+
+    .main-content nav ul li a{
+        font-size: 80%;
+    }
+
+    .right-intro div img{
+        height: 6em;
+        width: auto;
+    }
+
+    footer p{
+        font-size: 6pt;
+    }
+
+    table thead th{
+        font-size: 10pt;
+    }
+
+    table tr td{
+        font-size: 7pt;
+    }
+}
+
+/*Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width:600px){
+    .content {
+        width: 41em;
+    }
+
+    #arrow-change,
+    #change-arrow,
+    .right-content h2{
+        font-size: 90%;
+    }
+
+    .right-content h5,
+    #main-block-container h5{
+        font-size: 50%;
+    }
+
+    .right-content {
+        width: 400px;
+    }
+
+    .right-content .gallery .img{
+        width: 4.2em;
+        height: 4.2em;
+    }
+
+    #main-item-container li{
+        font-size: 70%;
+    }
+
+    .header{
+        height: 110px;
+    }
+
+    .header img {
+        height: 7em;
+        width: auto;
+    }
+
+    .header div h1 {
+        font-size: 150%;
+    }
+    
+    .header div p {
+        font-size: 11pt;
+    }
+
+    .right-content-1 button{
+        font-size: 9pt;
+    }
+
+    table thead th{
+        font-size: 11pt;
+    }
+
+    table tr td{
+        font-size: 8pt;
+    }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width:768px){
+    .content {
+        width: 45em;
+    }
+
+    #arrow-change,
+    #change-arrow,
+    .right-content h2{
+        font-size: 110%;
+    }
+
+    .right-content h5{
+        font-size: 65%;
+    }
+
+    .right-content {
+        width: 500px;
+    }
+}
+
+/* Large devices (laptops/ desktops, 992px and up) */
+@media only screen and (min-width:992px){
+    .content {
+        width: 53em;
+    }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width:1200px){
+    .content {
+        width: 56em;
+    }
+}

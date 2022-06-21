@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sample Web</title>
+
+    <script src="https://kit.fontawesome.com/ad9fa19830.js" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="Assets/css/style.css">
+
+    <link rel="stylesheet" href="Assets/css/responsive.css">
+
+
+    <script src="Assets/js/script.js"></script>
+
+</head>
+
+<body>
+    <div class="content">
+        <div class="header">
+            <img src="Assets/images/logos/Logo-Triangel.PNG" alt="tri">
+            <div>
+                <h1>Triangle Hunt</h1>
+                <p>Anywhere any time</p>
+            </div>
+        </div>
+
+        <div class="main-content">
+            <nav>
+                <ul>
+                    <li class="selected">
+                        <a href="#">Home <i class="fa fa-caret-down"></i></a>
+
+                        <ul>
+                            <li>
+                                <a href="./Page-1/page_1.html">New Page</a>
+                            </li>
+                            <li>
+                                <a href="./Page-2/page_2.html">New Page 2</a>
+                            </li>
+                            <li>
+                                <a href="./Page-3/page_3.html">New Page 3</a>
+                            </li>
+                            <li>
+                                <a href="./Page-4/page_4.html">New Page 4 <i class="fa fa-caret-right"></i></a>
+
+                                <ul>
+                                    <li><a href="./Page-4/page_4.html">Home</a></li>
+                                    <li><a href="./Page-4/about_us.html">About Us</a></li>
+                                    <li><a href="./Page-4/courses.html">Courses</a></li>
+                                    <li><a href="./Page-4/resources.html">Resources</a></li>
+                                    <li><a href="./Page-4/Contact_us.html">Contact Us</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="./Page-5/page_5.html">New Page 5</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li><a href="./Main-Home/features.html">Features</a></li>
+                    <li><a href="./Main-Home/reviews.html">Reviews</a></li>
+                    <li><a href="./Main-Home/pricing.html">Pricing</a></li>
+                    <li><a href="./Main-Home/faq.html">FAQ</a></li>
+                    <li class="active"><a href="./Main-Home/register.html">Get Started</a></li>
+                </ul>
+            </nav>
+
+            <div class="main-content-1">
+                <div class="left-menu">
+                    <ul onclick="displayModel();" style="cursor: pointer;">
+                        <li id="arrow-change">Main Menu &#8609;</li>
+                    </ul>
+
+                    <ul id="main-item-container">
+                        <!-- Trigger/ Open the Model -->
+                        <li id="main-Item-1" onclick="modelItem1();">Main Item 1</li>
+                        <li id="main-Item-2" onclick="modelItem2();">Main Item 2</li>
+                        <li id="main-Item-3" onclick="modelItem3();">Main Item 3</li>
+                        <li id="main-Item-4" onclick="modelItem4();">Main Item 4</li>
+                        <li id="main-Item-5" onclick="modelItem5();">Main Item 5</li>
+                        <li id="main-Item-6" onclick="modelItem6();">Main Item 6</li>
+                        <li id="main-Item-7" onclick="modelItem7();">Main Item 7</li>
+                        <li id="main-Item-8" onclick="modelItem8();">Main Item 8</li>
+                    </ul>
+
+                    <div id="main-Item-model-1" class="model-1">
+                        <!-- Model content -->
+                        <div class="model-content-1">
+                            <div class="model-header">
+                                <span class="close">&times;</span>
+                                <p>Main Item 1</p>
+                            </div>
+                            <p>Lorem ipsum dolor sit amet,
+                                consectetur adipisicing elit. Aliquam dolor
+                                esse atque, aperiam delectus tenetur veniam
+                                suscipit possimus inventore, doloribus blanditiis
+                                consequuntur, neque consequatur!
+                                Eaque facilis placeat molestias quis corporis.</p>
+                        </div>
+                    </div>
+
+                    <div id="main-Item-model-2" class="model-2">
+                        <!-- Model content -->
+                        <div class="model-content-2">
+                            <div class="model-header">
+                                <span class="close">&times;</span>
+                                <p>Main Item 2</p>
+                            </div>
+                            <p>Lorem ipsum dolor sit amet,
+                                consectetur adipisicing elit. Aliquam dolor
+                                esse atque, aperiam delectus tenetur veniam
+                                suscipit possimus inventore, doloribus blanditiis
+                                consequuntur, neque consequatur!
+                                Eaque facilis placeat molestias quis corporis.</p>
+                        </div>
+                    </div>
+
+                    <div id="main-Item-model-3" class="model-3">
+                        <!-- Model content -->
+                        <div class="model-content-3">
+                            <div class="model-header">
+                                <span class="close">&times;</span>
+                                <p>Main Item 3</p>
+                            </div>
+                            <p>Lorem ipsum dolor sit amet,
+                                consectetur adipisicing elit. Aliquam dolor
+                                esse atque, aperiam delectus tenetur veniam
+                                suscipit possimus inventore, doloribus blanditiis
+                                consequuntur, neque consequatur!
+                                Eaque facilis placeat molestias quis corporis.</p>
+                        </div>
+                    </div>
+
+                    <div id="main-Item-model-4" class="model-4">
+                        <!-- Model content -->
+                        <div class="model-content-4">
+                            <div class="model-header">
+                                <span class="close">&times;</span>
+                                <p>Main Item 4</p>
+                            </div>
+                            <p>Lorem ipsum dolor sit amet,
+                                consectetur adipisicing elit. Aliquam dolor
+                                esse atque, aperiam delectus tenetur veniam
+                                suscipit possimus inventore, doloribus blanditiis
+                                consequuntur, neque consequatur!
+                                Eaque facilis placeat molestias quis corporis.</p>
+                        </div>
+                    </div>
+
+                    <div id="main-Item-model-5" class="model-5">
+                        <!-- Model content -->
+                        <div class="model-content-5">
+                            <div class="model-header">
+                                <span class="close">&times;</span>
+                                <p>Main Item 5</p>
+                            </div>
+                            <p>Lorem ipsum dolor sit amet,
+                                consectetur adipisicing elit. Aliquam dolor
+                                esse atque, aperiam delectus tenetur veniam
+                                suscipit possimus inventore, doloribus blanditiis
+                                consequuntur, neque consequatur!
+                                Eaque facilis placeat molestias quis corporis.</p>
+                        </div>
+                    </div>
+
+                    <div id="main-Item-model-6" class="model-6">
+                        <!-- Model content -->
+                        <div class="model-content-6">
+                            <div class="model-header">
+                                <span class="close">&times;</span>
+                                <p>Main Item 6</p>
+                            </div>
+                            <p>Lorem ipsum dolor sit amet,
+                                consectetur adipisicing elit. Aliquam dolor
+                                esse atque, aperiam delectus tenetur veniam
+                                suscipit possimus inventore, doloribus blanditiis
+                                consequuntur, neque consequatur!
+                                Eaque facilis placeat molestias quis corporis.</p>
+                        </div>
+                    </div>
+
+                    <div id="main-Item-model-7" class="model-7">
+                        <!-- Model content -->
+                        <div class="model-content-7">
+                            <div class="model-header">
+                                <span class="close">&times;</span>
+                                <p>Main Item 7</p>
+                            </div>
+                            <p>Lorem ipsum dolor sit amet,
+                                consectetur adipisicing elit. Aliquam dolor
+                                esse atque, aperiam delectus tenetur veniam
+                                suscipit possimus inventore, doloribus blanditiis
+                                consequuntur, neque consequatur!
+                                Eaque facilis placeat molestias quis corporis.</p>
+                        </div>
+                    </div>
+
+                    <div id="main-Item-model-8" class="model-8">
+                        <!-- Model content -->
+                        <div class="model-content-8">
+                            <div class="model-header">
+                                <span class="close">&times;</span>
+                                <p>Main Item 8</p>
+                            </div>
+                            <p>Lorem ipsum dolor sit amet,
+                                consectetur adipisicing elit. Aliquam dolor
+                                esse atque, aperiam delectus tenetur veniam
+                                suscipit possimus inventore, doloribus blanditiis
+                                consequuntur, neque consequatur!
+                                Eaque facilis placeat molestias quis corporis.</p>
+                        </div>
+                    </div>
+                    <ul onclick="displayBlock();" style="cursor: pointer;">
+                        <li id="change-arrow">Block &#8609;</li>
+                    </ul>
+                    <div id="main-block-container">
+                        <h5>Enter Block content here...</h5>
+                        <h5>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aenean commodo Lorem ipsum dolor sit
+                            amet, consectetur adipisicing elit. Aenean commodo</h5>
+                    </div>
+                </div>
+
+                <div class="right-content">
+                    <h2>Gallery <span class="hover-has">#</span></h2>
+                    <h5>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                        labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                        laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
+                        voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat
+                        non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                        Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque
+                        laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto
+                        beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut
+                        odit aut fugit
+                    </h5>
+
+                    <div class="gallery">
+                        <span class="img img-1"></span>
+                        <span class="img img-2"></span>
+                        <span class="img img-3"></span>
+                        <span class="img img-4"></span>
+                        <span class="img img-5"></span>
+                        <span class="img img-6"></span>
+                        <span class="img img-7"></span>
+                        <span class="img img-8"></span>
+                        <span class="img img-9"></span>
+                    </div>
+
+                    <div class="right-content-1">
+                        <div class="sub">
+                            <h2>Subscription <span class="hover-has">#</span></h2>
+                            <h5>
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                                exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
+                                dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                                <span id="dots">...</span>
+                                <span id="more">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aliquid,
+                                    numquam? At expedita doloribus soluta ipsum fuga similique quisquam quos velit ipsam
+                                    dolore ea quo, voluptate aliquid quam voluptas in possimus.</span>
+                            </h5>
+                            <button onclick="readMore()" id="read-more">Read more</button>
+                        </div>
+                        <div class="other">
+                            <h2>Other Services <span class="hover-has">#</span></h2>
+                            <h5>
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                                exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
+                                dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                                <span id="dots-1">...</span>
+                                <span id="more-1">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aliquid,
+                                    numquam? At expedita doloribus soluta ipsum fuga similique quisquam quos velit ipsam
+                                    dolore ea quo, voluptate aliquid quam voluptas in possimus.</span>
+                            </h5>
+                            <button onclick="readMoree()" id="read-more-1">Read more</button>
+                        </div>
+                    </div>
+
+                    <div class="right-intro">
+                        <h2>Introduction <span class="hover-has">#</span></h2>
+                        <div>
+                            <h5>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Deleniti veniam necessitatibus
+                                aliquam? Dignissimos perferendis, debitis nisi neque veniam molestiae consequuntur,
+                                consequatur odio, temporibus dolores minus fuga error tempore minima culpa. Lorem ipsum
+                                dolor sit amet consectetur adipisicing elit. Nemo facere odio quasi reprehenderit hic.
+                                Exercitationem amet delectus sit temporibus velit quidem nulla minus sed! Architecto
+                                quaerat doloribus culpa aliquid maiores.</h5>
+                            <img src="Assets/images/banners/intro.png" alt="introduction">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <footer>
+                <p>Copyright © 2014.</p>
+            </footer>
+        </div>
+    </div>
+</body>
+
+</html>

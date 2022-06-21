@@ -1,0 +1,459 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>simplestyle_banner</title>
+    <style>
+        body {
+            padding: 0;
+            margin: 0;
+        }
+
+        .header {
+            width: 100%;
+            height: 175px;
+            background-color: #323534;
+            border-bottom: 4px solid #8db53b;
+            color: white;
+        }
+
+        .header-content {
+            width: 860px;
+            margin: auto;
+            font-family: "century gothic", arial, sans-serif;
+        }
+
+        .header-content h1 {
+            margin: 0;
+            letter-spacing: 0.1em;
+            font-size: 38.4px;
+            padding-top: 28px;
+            font-weight: 500;
+        }
+
+        .header-content span {
+            color: #e3ed4b;
+        }
+
+        .header-content span:hover {
+            color: white;
+        }
+
+        .header-content p {
+            color: #999999;
+            padding-top: 4px;
+            margin-top: 0;
+            font-weight: 300;
+            font-size: 11pt;
+        }
+
+        .menu-bar {
+            width: 900px;
+            margin: auto;
+            margin-right: 16.5em;
+            /* margin-right: 60px; */
+        }
+
+        .menu-bar ul {
+            margin-top: 42px;
+        }
+
+        .menu-bar ul li {
+            list-style: none;
+            position: relative;
+            display: inline-block;
+        }
+
+        .menu-bar li a{
+            font-family: 'trebuchet ms', sans-serif;
+            color: white;
+            display: block;
+            text-decoration: none;
+            float: left;
+            height: 25px;
+            padding: 6px 35px 5px 28px;
+            text-align: center;
+            background: #5A5A5A;
+            margin-right: 2px;
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
+            font-size: 11pt;
+        }
+
+        .menu-bar li.selected a{
+            background: #bae361;
+        }
+
+        .menu-bar li.selected a:hover{
+            color: white;
+        }
+
+        .menu-bar ul li a:hover{
+            color: #e3ed4b;
+        }
+
+        .menu-bar ul ul {
+            position: absolute;
+            top: -5.7px;
+            display: none;
+            left: -40px;
+        }
+
+        .menu-bar ul li:hover > ul {
+            display: block;
+        }
+
+        .menu-bar ul ul li {
+            width: 175px;
+            float: none;
+            display: list-item;
+            position: relative;
+        }
+
+        .menu-bar ul ul ul li {
+            position: relative;
+            top: 70px;
+            left: 150px;
+        }
+
+        .menu-bar ul ul li a,
+        .menu-bar ul ul ul li a{
+            border-radius: 0em;
+            width: 88px;
+        }
+
+
+        .menu-bar ul ul li a:hover,
+        .menu-bar ul ul ul li a:hover {
+            background-color: #4e4e4e;
+            transition: 150ms;
+            cursor: pointer;
+        }
+
+        .menu-bar li ul li.selected a,
+        .menu-bar li ul li.width a{
+            width: 88px;
+        } 
+
+        .main-content {
+            width: 860px;
+            margin: auto;
+        }
+
+        .main-content img {
+            width: 860px;
+            margin: auto;
+            border: 10px solid #ddd;
+            margin-top: 1.2em;
+            background-size: cover;
+            background-repeat: no-repeat;
+            height: 180px;
+        }
+
+        .texts {
+            font-family: 'trebuchet ms', sans-serif;
+            width: 620px;
+        }
+
+        .texts h1 {
+            font-size: 22px;
+            font-weight: 100;
+            padding-top: 15px;
+            letter-spacing: 1px;
+            padding-bottom: 5px;
+            color: #000000e5;
+        }
+
+        .texts p,
+        .news p {
+            color: #555555;
+            font-size: 10pt;
+            padding-bottom: 10px;
+            line-height: 1.7em;
+        }
+
+        .texts h2 {
+            color: #009FBC;
+            font-weight: 200;
+        }
+
+        .texts ul {
+            color: #555555;
+            font-size: 10pt;
+            line-height: 1.7em;
+            text-align: left;
+        }
+
+        .texts ul li {
+            list-style: round;
+            margin-left: -19px;
+        }
+
+        .texts ul li::marker {
+            color: #9cc8f1;
+            font-size: 15px;
+        }
+
+        .main-content-1 {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .boxes {
+            float: right;
+            margin-right: -20px;
+            font-family: 'trebuchet ms', sans-serif;
+            margin-top: 15px;
+
+        }
+
+        .news,
+        .links,
+        .search {
+            border: 1px solid #e0e0e0;
+            border-radius: 10px;
+            height: max-content;
+            width: 210px;
+            padding: 0px 5px;
+        }
+
+        .news h3,
+        .links h3,
+        .search h3 {
+            font-size: 18px;
+            font-weight: 200;
+            padding: 0px 10px;
+            padding-bottom: 1px;
+        }
+
+        .news h4 {
+            color: #009FBC;
+            font-weight: 200;
+            font-size: 14.5px;
+            padding: 0px 10px;
+            margin-bottom: 0;
+        }
+
+        .news h6 {
+            color: #999999;
+            font-weight: 300;
+            font-size: 11.5px;
+            padding: 0px 10px;
+            margin-top: 5px;
+            margin-bottom: 0;
+        }
+
+        .news p {
+            padding: 0px 10px;
+            margin-bottom: 25px;
+        }
+
+        .links ul {
+            margin-left: -10px;
+        }
+
+        .links ul li a,
+        .texts p a,
+        .news a {
+            color: #aeb036;
+            font-size: 10pt;
+            line-height: 1.7em;
+        }
+
+        .links ul li a:hover,
+        .texts p a:hover,
+        .news a:hover {
+            text-decoration: none;
+            cursor: pointer;
+        }
+
+        .links ul li::marker {
+            color: #9cc8f1;
+            font-size: 15px;
+        }
+
+        .links,
+        .search {
+            margin-top: 20px;
+        }
+
+        .input {
+            height: 20px;
+        }
+
+        .search-1 {
+            display: flex;
+            padding: 0px 10px;
+            justify-content: space-between;
+            margin-bottom: 22px;
+        }
+
+        .search img {
+            width: 30px;
+            height: auto;
+            border: transparent;
+            margin-top: 0;
+        }
+
+        .search {
+            margin-bottom: 25px;
+        }
+
+        .footer {
+            width: 100%;
+            height: 100px;
+            background-color: #3b3939;
+            border-top: 5px solid #8db53b;
+        }
+
+        .footer p {
+            line-height: 1.7em;
+            padding-bottom: 5px;
+            font-family: 'trebuchet ms', sans-serif;
+            text-align: center;
+            color: #A8AA94;
+            font-size: 10pt;
+            margin-bottom: 2px;
+        }
+
+        .footer p a{
+            text-decoration: none;
+            color: #A8AA94;
+            font-size: 10pt;
+        } 
+
+        .footer p:first-child{
+            margin-top: 22px;
+        }
+
+        .footer p:nth-child(2){
+            margin-top: 2px;
+        }
+    </style>
+
+    <script src="https://kit.fontawesome.com/ad9fa19830.js" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+    <div class="header">
+        <div class="header-content">
+            <h1>simple<span>style_banner</span></h1>
+            <p>Simple. Contemporary. Website Template.</p>
+        </div>
+        <div class="menu-bar">
+            <ul>
+                <li>
+                    <a href="/index.html">Home <i class="fa fa-caret-down"></i></a>
+
+                    <ul>
+                        <li class="selected">
+                            <a href="#">New Page</a>
+                        </li>
+                        <li>
+                            <a href="/Page-2/page_2.html">New Page 2</a>
+                        </li>
+                        <li>
+                            <a href="/Page-3/page_3.html">New Page 3</a>
+                        </li>
+                        <li>
+                            <a href="/Page-4/page_4.html">New Page 4 <i class="fa fa-caret-right"></i></a>
+            
+                            <ul>
+                                <li><a href="/Page-4/page_4.html">Home</a></li>
+                                <li><a href="/Page-4/about_us.html">About Us</a></li>
+                                <li><a href="/Page-4/courses.html">Courses</a></li>
+                                <li><a href="/Page-4/resources.html">Resources</a></li>
+                                <li><a href="/Page-4/Contact_us.html">Contact Us</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="/Page-5/page_5.html">New Page 5</a>
+                        </li>
+                    </ul>
+                </li>
+                <li><a href="features.html">Features</a></li>
+                <li><a href="reviews.html">Reviews</a></li>
+                <li><a href="pricing.html">Pricing</a></li>
+                <li><a href="faq.html">FAQ</a></li>
+                <li><a href="register.html">Get Started</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="main-content">
+        <img src="/Assets/images/banners/globalpedia-hero-el-salvador-1.jpeg" alt="Banner">
+
+        <div class="main-content-1">
+            <div class="texts">
+                <h1>Welcome to the simplestyle_banner template</h1>
+
+                <p>This standards compliant, simple, fixed width website template is released as an 'open source' design
+                    (under a <a href="http://creativecommons.org/licenses/by/3.0">Creative Commons Attribution 3.0
+                        Licence</a>), which means that you are free to download and use it for anything you want
+                    (including modifying and amending it). All I ask is that you leave the 'design from
+                    HTML5webtemplates.co.uk' link in the footer of the template, but other than that...</p>
+                <p>This template is written entirely in HTML5 and CSS, and can be validated using the links in the
+                    footer.</p>
+                <p>You can view more free HTML5 web templates <a href="http://www.html5webtemplates.co.uk/">here</a>.
+                </p>
+                <p>This template is a fully functional 5 page website, with an <a
+                        href="https://www.html5webtemplates.co.uk/wp-content/uploads/2020/templates/simplestyle_banner/examples.html">examples</a>
+                    page that gives examples of all the styles available with this design.</p>
+
+                <h2>Browser Compatibility</h2>
+                <p>This template has been tested in the following browsers:</p>
+
+                <ul>
+                    <li>&nbsp; Internet Explorer 9</li>
+                    <li>&nbsp; FireFox 25</li>
+                    <li>&nbsp; Google Chrome 31</li>
+                </ul>
+            </div>
+
+            <div class="boxes">
+                <div class="news">
+                    <h3>Latest News</h3>
+                    <h4>NEW WEBSITE LAUNCHED</h4>
+                    <h6>February 1st, 2014</h6>
+                    <p>2014 sees the redesign of our website. Take a look around and let us know what you think.
+                        <br> <a href="#">Read more</a>
+                    </p>
+                </div>
+
+                <div class="links">
+                    <h3>Useful Links</h3>
+                    <ul>
+                        <li>&nbsp; <a href="#">link 1</a></li>
+                        <li>&nbsp; <a href="#">link 2</a></li>
+                        <li>&nbsp; <a href="#">link 3</a></li>
+                        <li>&nbsp; <a href="#">link 4</a></li>
+                    </ul>
+                </div>
+
+                <div class="search">
+                    <h3>Search</h3>
+                    <div class="search-1">
+                        <input type="text" placeholder="Enter Keywords...." class="input">
+                        <img src="/Assets/images/search.png" alt="search icon">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="footer">
+        <p>
+            <a href="index.html">Home</a> | <a href="examples.html">Examples</a> | <a href="page.html">A Page</a> | 
+            <a href="another_page.html">Another Page</a> | <a href="contact.html">Contact Us</a>
+        </p>
+
+        <p>Copyright © simplestyle_banner | <a href="http://validator.w3.org/check?uri=referer">HTML5</a> | <a href="http://jigsaw.w3.org/css-validator/check/referer">CSS</a> | <a href="http://www.html5webtemplates.co.uk">design from HTML5webtemplates.co.uk</a>
+        </p>
+    </div>
+</body>
+
+</html>
